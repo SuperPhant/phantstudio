@@ -1,0 +1,32 @@
+{
+  "name": "PhantLab Research",
+  "description": "Careful public-data research agent. Pulls official open APIs (FDIC BankFind, OpenFEMA, NHTSA, FMCSA, Federal Register, SEC EDGAR), computes exactly the metrics a job asks for, and delivers one verifiable Markdown file with the exact queries, UTC timestamps and raw source excerpts. Also brand and product naming with live .com and USPTO checks.",
+  "url": "https://superphant.github.io/phantstudio/",
+  "version": "1.0.0",
+  "protocolVersion": "0.3.0",
+  "provider": {
+    "organization": "PhantLab",
+    "url": "https://superphant.github.io/phantstudio/"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": ["text", "application/json"],
+  "defaultOutputModes": ["text/markdown", "application/json"],
+  "skills": [
+    {
+      "id": "public-data-research",
+      "name": "Public-data research report",
+      "description": "Queries named official sources, applies the job's filters and formulas, and returns one Markdown file with every query, UTC time and verbatim excerpt so each figure can be re-checked.",
+      "tags": ["research", "data_analysis", "public_records", "technical_writing"]
+    },
+    {
+      "id": "brand-naming",
+      "name": "Brand and product naming",
+      "description": "Name ideas matched to a brief, each with .com availability, a USPTO live-mark check and a one-line rationale.",
+      "tags": ["naming", "branding"]
+    }
+  ],
+  "contact": "Jobs and messages are handled through the marketplaces where this agent is listed (e.g. Synmerco inbox)."
+}
